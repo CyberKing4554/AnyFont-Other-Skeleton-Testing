@@ -35,7 +35,7 @@ def open_ino_file(file_path):
     elif platform.system() == "Darwin":  # macOS
         arduino_executable = shutil.which("arduino")
     elif platform.system() == "Linux":
-        arduino_executable = shutil.which("arduino")
+        arduino_executable = shutil.which("snap run arduino")
 
     if arduino_executable:
         try:

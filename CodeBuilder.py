@@ -6,6 +6,7 @@ import numpy as np
 # useProgMem = "PROGMEM"
 # useProgMem = ""
 useProgMem = "MEM_TYPE"
+import os
 
 
 structCode = """
@@ -228,7 +229,7 @@ def buildCode(lettersJson, ignore_height):
 
 
     # Read code template
-    codeTemplateFile = open("arduinotemplate\\arduinotemplate.ino")
+    codeTemplateFile = open("arduinotemplate/arduinotemplate.ino")
     codeTemplate = codeTemplateFile.read()
     codeTemplateFile.close()
     codeTemplate = codeTemplate[codeTemplate.index("//END LETTERS"):]
