@@ -1,0 +1,8 @@
+Whenever you're working on the project, just remember to activate the virtual environment with:
+
+source venv/bin/activate
+
+
+And when you're done, you can deactivate it with:
+
+deactivate
